@@ -1,0 +1,7 @@
+{
+  "appId": "org.sunbellad.coop.app",
+  "appName": "SunbelladCoop App",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "www"
+}

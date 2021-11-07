@@ -1,0 +1,10 @@
+{
+  "appId": "org.sunbellad.coop.app",
+  "appName": "SunbelladCoop App",
+  "bundledWebRuntime": false,
+  "npmClient": "yarn",
+  "webDir": "www",
+  "server": {
+    "url": "http://100.110.60.126:8080"
+  }
+}
