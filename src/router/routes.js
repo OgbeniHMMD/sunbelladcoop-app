@@ -16,12 +16,16 @@ const routes = [
     children: [
       { path: "login", component: () => import("src/pages/auth/Login.vue") },
       {
-        path: "register",
-        component: () => import("src/pages/auth/Register.vue"),
+        path: "signup",
+        component: () => import("src/pages/auth/Signup.vue"),
       },
       {
-        path: "reset-password",
-        component: () => import("src/pages/auth/PasswordReset.vue"),
+        path: "password/reset",
+        component: () => import("src/pages/auth/password/Reset.vue"),
+      },
+      {
+        path: "password/success",
+        component: () => import("src/pages/auth/password/Success.vue"),
       },
     ],
   },
