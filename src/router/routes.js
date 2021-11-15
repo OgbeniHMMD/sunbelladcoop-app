@@ -1,31 +1,32 @@
 const routes = [
   {
     path: "/",
-    component: () => import("pages/SplashScreen.vue"),
-  },
-
-  {
-    path: "/home",
     component: () => import("layouts/MainLayout.vue"),
-    children: [{ path: "", component: () => import("pages/Index.vue") }],
+    children: [
+      {
+        path: "",
+        alias: "home",
+        component: () => import("pages/Index.vue"),
+      },
+    ],
   },
 
   {
     path: "/auth",
     component: () => import("layouts/AuthLayout.vue"),
     children: [
-      { path: "login", component: () => import("src/pages/auth/Login.vue") },
+      { path: "login", component: () => import("pages/auth/Login.vue") },
       {
         path: "signup",
-        component: () => import("src/pages/auth/Signup.vue"),
+        component: () => import("pages/auth/Signup.vue"),
       },
       {
         path: "password/reset",
-        component: () => import("src/pages/auth/password/Reset.vue"),
+        component: () => import("pages/auth/password/Reset.vue"),
       },
       {
         path: "password/success",
-        component: () => import("src/pages/auth/password/Success.vue"),
+        component: () => import("pages/auth/password/Success.vue"),
       },
     ],
   },

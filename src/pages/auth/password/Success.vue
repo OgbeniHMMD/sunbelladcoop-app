@@ -1,5 +1,5 @@
 <template>
-  <main class="full-width">
+  <q-page class="full-width">
     <header class="text-center">
       <q-icon name="check_circle" color="primary" style="font-size: 4em" />
 
@@ -14,5 +14,5 @@
 
       <q-btn color="primary" label="Go to Dashboard" to="/home" />
     </header>
-  </main>
+  </q-page>
 </template>

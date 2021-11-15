@@ -1,5 +1,5 @@
 <template>
-  <main class="full-width">
+  <q-page class="full-width">
     <header class="text-center">
       <img
         alt="Quasar logo"
@@ -49,5 +49,5 @@
 
       <q-btn color="primary" label="Continue" to="/home" class="full-width" />
     </div>
-  </main>
+  </q-page>
 </template>

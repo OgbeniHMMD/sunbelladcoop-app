@@ -1,16 +1,18 @@
 <template>
-  <q-item clickable tag="a" :href="link">
-    <q-item-section v-if="icon" avatar>
-      <q-icon :name="icon" />
-    </q-item-section>
+  <router-link :to="link" class="text-primary">
+    <q-item clickable tag="div">
+      <q-item-section v-if="icon" avatar>
+        <q-icon :name="icon" />
+      </q-item-section>
 
-    <q-item-section>
-      <q-item-label>{{ title }}</q-item-label>
-      <!-- <q-item-label caption>
+      <q-item-section>
+        <q-item-label>{{ title }}</q-item-label>
+        <!-- <q-item-label caption>
         {{ caption }}
       </q-item-label> -->
-    </q-item-section>
-  </q-item>
+      </q-item-section>
+    </q-item>
+  </router-link>
 </template>
 
 <script>
